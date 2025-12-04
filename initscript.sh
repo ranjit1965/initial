@@ -73,7 +73,7 @@ echo "Creating 1GB partition on servera..."
 ssh root@servera '(
 echo -e "n\np\n1\n\n+1G\nw" | fdisk /dev/sdb
 partprobe /dev/sdb
-mkfs.xfs -f /dev/sdb1
+mkfs.xfs -f /dev/sdb1 -y
 )'
 
 echo "Partition /dev/sdb1 created and formatted with XFS on servera."
