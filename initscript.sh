@@ -52,8 +52,10 @@ firewall-cmd --list-all
 EOF
 
 #Clone a Repository
-git clone https://github.com/Marieswaran2003/systemc-timer
-scp ~/systemc-timer/lookup-1.0-1.el10.noarch.rpm root@serverb:~/
+ssh root@serverb.lab.example.com'dnf install git -y'
+sleep 10
+ssh root@serverb.lab.example.com 'git clone https://github.com/Marieswaran2003/systemc-timer'
+#scp ~/systemc-timer/lookup-1.0-1.el10.noarch.rpm root@serverb:~/
 
 #Booting Menu
 echo "Lab Script"
