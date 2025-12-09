@@ -55,7 +55,7 @@ EOF
 ssh root@serverb.lab.example.com'dnf install git -y'
 sleep 10
 ssh student@workstation  'git clone https://github.com/Marieswaran2003/systemc-timer'
-scp ~/systemc-timer/lookup-1.0-1.el10.noarch.rpm root@serverb:~/
+scp ~/initial/systemc-timer/lookup-1.0-1.el10.noarch.rpm  root@serverb:~/
 
 #Booting Menu
 echo "Lab Script"
