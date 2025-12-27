@@ -62,7 +62,7 @@ echo "Lab Script"
 lab start rootpw-recover
 
 echo "Hostname Updated"
-ssh root@serverb.lab.example.com 'hostnamectl set-hostname localhost'
+ssh root@serverb.lab.example.com 'hostnamectl set-hostname clean'
 #echo "Updating IP address and gateway using NetworkManager..."
 #ssh root@serverb 'nmcli con mod "Wired connection 1" ipv4.addresses 172.25.250.30/24'
 #ssh root@serverb 'nmcli con mod "Wired connection 1" ipv4.gateway 172.25.250.254'
