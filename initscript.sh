@@ -88,7 +88,7 @@ ssh root@servera.lab.example.com 'echo "/dev/vg/lv  /lo  ext3  defaults 0 0" >> 
 ssh root@servera.lab.example.com  mount -a
 ssh root@servera.lab.example.com  lsblk
 ssh root@servera.lab.example.com 'tuned-adm profile powersave'
-ssh root@serverb.lab.example.com rm -rvf /etc/yum.repos.d/*
-ssh root@servera.lab.example.com rm -rvf /etc/yum.repos.d/*
+#ssh root@serverb.lab.example.com rm -rvf /etc/yum.repos.d/*
+#ssh root@servera.lab.example.com rm -rvf /etc/yum.repos.d/*
 ssh root@servera.lab.example.com 'echo "redhat" | passwd --stdin devops'
 echo "All The Best"
